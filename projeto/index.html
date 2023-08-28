@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carrinho</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="estilos/style.css">
+    </head>
+    <body onresize="mudouTamanho()">
+        <header>
+            <div class="topo">
+                <i id="cart" class="material-icons">shopping_cart</i>
+                <i id="burguer" class="material-icons" onclick="clickMenu()" >menu</i>
+            </div>
+            <menu id="itens">
+                <ul>
+                    <li><a href="#">Mulheres</a></li>
+                    <li><a href="#">Crianças</a></li>
+                    <li><a href="#">Homens</a></li>
+                    <li><a href="#"><i class="material-icons">search</i></a></li>
+                </ul>
+            </menu>
+        </header>
+
+        <main>
+            <div class="h1">
+                <i id="carth1" class="material-icons larger-icon">shopping_cart</i>
+                <h1>Carrinho de compras</h1>
+            </div>
+
+            <section class="produtos">
+                <div class="descriçao"></div>
+                <div class="qntd"></div>
+                <div class="preço"></div>
+                <div class="subtotal"></div>
+            </section>
+
+            <section class="envio_e_preço">
+                <aside>
+                    <fieldset>
+                        <form action="#" class="cep">
+                            <input type="number" name="cep" id="icep" placeholder="Digite seu CEP" />
+                            <label for="icep"><input class="btn btn-cep" type="button" value="Calcular frete"></label>
+                        </form>
+                    </fieldset>
+                    <table id="escolha_frete">
+                        <thead>
+                            <th>Envio</th>
+                            <th>Frete</th>
+                            <th>Prazo</th>
+                        </thead>
+                        <tr>
+                            <td>
+                                <input type="radio" name="frete" id="pac" />
+                                <label for="pac">PAC</label>
+                            </td>
+                            <td>GRÁTIS</td>
+                            <td>8 dias</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="frete" id="retirar_na_loja" />
+                                <label for="retirar_na_loja">Retirar na loja</label>
+                            </td>
+                            <td>GRÁTIS</td>
+                            <td>0 dias</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="frete" id="sedex" />
+                                <label for="sedex">SEDEX</label>
+                            </td>
+                            <td>R$ 30,00</td>
+                            <td>4 dias</td>
+                        </tr>
+                    </table>
+                </aside>
+                <aside>
+                    <table id="total_compra">
+                        
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>R$</td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>R$</td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>R$</td>
+                        </tr>
+                    </table>
+                    <p>Se possuir cupons de desconto, utilize na pagina seguinte</p>
+                </aside>
+            </section>
+            <section class="buttons">
+                <button class="btn back">
+                    <a href="#">Escolher mais produtos</a>
+                </button>
+                <button class="btn fwd">
+                    <a href="#">Finalizar compra &#x2714;</a>
+                </button>
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+        <script>
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+            itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }    
+        }
+    </script>
+    </body>
+</html>

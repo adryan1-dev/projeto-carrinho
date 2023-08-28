@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+:root{
+    --cor1: #483285;
+    --cor2: #D6004B;
+    --cor3: #02FF88;
+    --cor4: #5CB85C;
+}
+
+header{
+    background-color: var(--cor1);
+}
+
+menu{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+menu a{
+    display: block;
+    text-align: center;
+    background-color: var(--cor1);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-top: 1px solid rgb(101, 80, 160);
+}
+
+menu a:hover{
+    background-color: rgb(101, 80, 160);
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+}
+
+#cart{
+    color: white;
+    display: block;
+    width: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.h1{
+    display: flex;
+    align-items: center;
+}
+
+#carth1{
+    color: var(--cor3);
+}
+
+.larger-icon{
+    font-size: 30px;
+}
+
+#burguer{
+    background-color: var(--cor1);
+    display: block;
+    width: 40px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+#burguer:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* .menu{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    padding: 16px;
+} */
+
+main{
+    max-width: 80vw;
+    margin: auto;
+    border: 10px solid var(--cor2);
+    padding: 10px;
+}
+
+
+
+.btn{
+    border: none;
+    padding: 10px; 
+    border-radius: 5px;
+}
+
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.back{
+    background-color: var(--cor2);
+}
+
+.fwd{
+    background-color: var(--cor4);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset{
+    border: none;
+}
+
+.btn-cep{
+    background-color: var(--cor3);
+    padding: 5px;
+    border-radius: 0px;
+    margin-left: 5px;
+}
+
+.cep{
+    display: flex;
+}
+
+
+
+
+
