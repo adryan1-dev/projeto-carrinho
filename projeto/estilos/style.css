@@ -142,7 +142,18 @@ fieldset{
     display: flex;
 }
 
+#escolha_frete tbody td{
+    padding-right: 50px;
+}
 
+#escolha_frete thead th{
+    text-align: center;
+    padding-right: 50px;
+}
+
+#envio{
+    text-align: left;
+}
 
 
 
